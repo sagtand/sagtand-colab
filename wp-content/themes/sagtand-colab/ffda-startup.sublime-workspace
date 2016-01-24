@@ -1,0 +1,846 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bor",
+				"border"
+			],
+			[
+				"brand",
+				"brand-secondary"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"border-top-",
+				"border-top-right-radius"
+			],
+			[
+				"ont",
+				"font-weight"
+			],
+			[
+				"primary",
+				"primary-text"
+			],
+			[
+				"hide",
+				"hideProducts"
+			],
+			[
+				"primar",
+				"primary-text"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"brand-",
+				"brand-primary"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"clic",
+				"clicked"
+			],
+			[
+				"fade",
+				"fade(color, 50%)"
+			],
+			[
+				"padding-",
+				"padding-bottom"
+			],
+			[
+				"trans",
+				"transform"
+			],
+			[
+				"backgoun",
+				"background-size"
+			],
+			[
+				"height",
+				"height"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"el",
+				"elementOffset"
+			],
+			[
+				"mouse",
+				"mouseX"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"is",
+				"isVisible"
+			],
+			[
+				"transition",
+				"transition-speed"
+			],
+			[
+				"transit",
+				"transition-speed"
+			],
+			[
+				"produ",
+				"product_name"
+			],
+			[
+				"post",
+				"post_title"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"pon",
+				"pointerY"
+			],
+			[
+				"prim",
+				"primaryColorTinted"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"tran",
+				"transition-speed"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"tra",
+				"transition-speed"
+			],
+			[
+				"align",
+				"vertical-align"
+			],
+			[
+				"table",
+				"table-cell"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"backgr",
+				"background"
+			],
+			[
+				"tribe-events",
+				"tribe-events-list"
+			],
+			[
+				"data",
+				"data-published"
+			],
+			[
+				"sort",
+				"sortValue"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "scss/app.scss",
+			"settings":
+			{
+				"buffer_size": 474,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower_components/foundation/scss/foundation.scss",
+			"settings":
+			{
+				"buffer_size": 1847,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 1981,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/app.css",
+			"settings":
+			{
+				"buffer_size": 588270,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "scss/site/_structure.scss",
+			"settings":
+			{
+				"buffer_size": 3524,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/fully-flared-wp4-startup/wp-content/themes/fullyflared-startup/ffda-startup.sublime-project",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/ffda-startup/wp-content/themes/fullyflared-startup/package.json",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/ftg/wp-content/themes/framtidsgymnasiet/Gruntfile.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/ftg/wp-content/themes/framtidsgymnasiet/package.json",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/ffda-startup/wp-content/themes/fullyflared-startup/Gruntfile.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/comviq/package.json",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-config.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-includes/theme-compat/footer.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/templates/content-single.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/template-contact.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/templates/content-about.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/layouts/_general.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/_global.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/_variables.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/layouts/_pages.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/templates/content-page.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/layouts/_header.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/layouts/_footer.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/css/editor-style.css",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/layouts/_woocommerce.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/plugins/_slick.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/single-product/add-to-cart/simple.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/content-product.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/404.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/templates/head.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/js/_main.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/templates/front-page-categories.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/lib/extras.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/layouts/pages/_home.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/lib/init.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/js/scripts.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/lib/scripts.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/single-product/product-thumbnails.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/functions.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/functions.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/archive-product.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/template-about.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/templates/page-header.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/assets/less/_variables.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/templates/head.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/ftg/wp-content/themes/framtidsgymnasiet/scss/app.scss",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/templates/front-page-categories.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/Gruntfile.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/woocommerce/js/frontend/checkout.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/woocommerce/content-product.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/woocommerce/content-single-product.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/assets/less/layouts/_woocommerce.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/assets/js/_main.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/_arbetsfiler/wp-content/themes/atioki/assets/less/layouts/pages/_home.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/vendor/bootstrap/less/variables.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/checkout/thankyou.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/page.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/front-page.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/cart/cart.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/checkout/payment.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/templates/header.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/single-product.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/js/plugins/wc-checkout.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/single-product/_product-thumbnails.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/main.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/plugins/_slick-theme.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/content-single-product.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/base.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-admin/css/colors/_variables.scss",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/single-product/add-to-cart/variable.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/plugins/woocommerce/assets/css/_fonts.scss",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/img/hat.svg",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/.htaccess",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/vendor/bootstrap/dist/css/bootstrap.css",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/vendor/bootstrap/less/grid.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki 2/wp-content/.gitignore",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/.git/config",
+		"/Users/Sandstedt/Desktop/Ta bort mapp/Signup Beitall.eml",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/templates/_front-page-categories.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/checkout/form-checkout.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/checkout/form-billing.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/checkout/form-pay.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/single-product/product-image.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce/cart/cart-totals.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/page-varukorg.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/Gruntfile.js",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less/components/_wp-classes.less",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/lib/config.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/beerweek/wp-config.php",
+		"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/css/main.css",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/templates/template-blank2.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/templates/template-blank.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/templates/ovning.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-config.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/style.css",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/templates/kontaktsida.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/templates/ovning-facit.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/templates/vanlig-wordpress-php-kod.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/templates/template-basic.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/templates/template.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-admin/edit-tags.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/header.php",
+		"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/masonry/page.php",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/scss/app.scss",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/scss/config/_colors.scss",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/js/sass-icons.js",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/scss/site/_structure.scss",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/index.html",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/scss/assets/icons.scss",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/css/style.css",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/Gruntfile.js",
+		"/Users/Sandstedt/Utveckling/htdocs/ffda-startup/wp-content/themes/fullyflared-startup/Gruntfile.js",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/js/app.js",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/bower.json",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/package.json",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/scss/assets/_icons.scss",
+		"/Users/Sandstedt/Utveckling/htdocs/lab/sass-icons/css/app.css",
+		"/Users/Sandstedt/Utveckling/htdocs/_mall/index.html",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/3-flexbox-omstrukturera/css/style.css",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/3-flexbox-omstrukturera/omstrukturera.html",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/2-flexbox-grid/css/style.css",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/2-flexbox-grid/grid.html",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/1-flexbox/flexbox.html",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/övningar/övning3/ovning3.html",
+		"/private/var/folders/lz/48s01w1n6nd5qntp_lz5tmym0000gn/T/fz3temp-1/index.html",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/_mall/index.html",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/övningar/övning1/ovning1.html",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/övningar/övning2/ovning2.html",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/övningar/övning3/css/style.css",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/övningar/övning4/css/style.css",
+		"/Users/Sandstedt/Dropbox/FFDA - Dropbox/PÅGÅENDE/YRGO/65_150220 yrgo ip14/PRODUKTION/Lektionsplanering/lektion10/övningar/övning4/ovning4.html",
+		"/Users/Sandstedt/Utveckling/htdocs/ffda-startup/wp-config.php",
+		"/private/var/folders/lz/48s01w1n6nd5qntp_lz5tmym0000gn/T/fz3temp-1/.htaccess"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"<open folders>",
+			"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less,/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/",
+			"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less,/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/vendor,/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki",
+			"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less,/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/vendor",
+			"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less",
+			"",
+			"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/",
+			"<open folders>,/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/",
+			"<open folders>,/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/woocommerce",
+			"<open folders>",
+			"<open files>,/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki",
+			"<open files>",
+			"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less,/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki",
+			"/Users/Sandstedt/Google Drive/Jobb/sidor/atioki/wp-content/themes/atioki/assets/less",
+			"",
+			"/Users/Sandstedt/Utveckling/htdocs/ip14/wp-content/themes/twentyfifteen",
+			"/Users/Sandstedt/Utveckling/htdocs/ffda-start/wp-content/themes/fullyflared-startup",
+			"/Users/Sandstedt/Utveckling/htdocs/ffda-start",
+			"/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content",
+			"/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/events-calendar-pro,/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/the-events-calendar,/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/the-events-calendar-community-events,/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/the-events-calendar-filterbar,/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/velvet-blues-update-urls",
+			"/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content",
+			"/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/events-calendar-pro,/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/the-events-calendar-filterbar,/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins",
+			"/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/events-calendar-pro,/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content/plugins/the-events-calendar-filterbar",
+			"/Users/Sandstedt/Utveckling/htdocs/beerweek/wp-content",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"-webkit-text-size-adjust: 100%;",
+			"/ffda-start/",
+			".page-template-page-template-contact-php",
+			"citysele",
+			"!skottagrus456",
+			"no-flex",
+			"no-flexbox",
+			"flex",
+			"attribute-size",
+			"							",
+			"						",
+			"					",
+			"#product-list",
+			"product-list",
+			"right",
+			"15px",
+			".front-border",
+			"animation",
+			"filter",
+			"div",
+			"filter-sizes",
+			"active",
+			"swipe",
+			"class=\"product_content",
+			"user-select",
+			"invert",
+			"#menu",
+			"container-fluid",
+			"hover-disabled",
+			"click",
+			"hide-transition",
+			"reservera",
+			"atioki_product_action",
+			"image_url",
+			"$user_name",
+			"image_url",
+			"prevent",
+			"addToCart",
+			"prevent",
+			"Köp:",
+			"woocommerce_template_single_add_to_cart",
+			"atioki_product_action",
+			"inget",
+			"Inget ex kvar",
+			"Z",
+			"woocommerce_product_thumbnails",
+			"add_image_size",
+			"div",
+			"+",
+			"{\n            width: '+=100'\n        }",
+			"slick-slider",
+			".category-description",
+			"hide",
+			"white",
+			"transition",
+			".line",
+			"line",
+			"class=\"woocommerce-message\"",
+			"raderad",
+			"wrap",
+			"woocommerce-message\"",
+			"Visa varukorgen",
+			".page-logo",
+			"z-index",
+			".overlay",
+			"page-logo",
+			"front-border",
+			"page-logo",
+			"line-height: 0",
+			"margin-bottom: 1em",
+			"  ",
+			"row page-header",
+			"page-logo",
+			"unity",
+			".category-description",
+			"scroll",
+			"menu",
+			"80%",
+			"  ",
+			"h3",
+			"frygia",
+			"url('",
+			"close",
+			".primary-font",
+			" .primary-font",
+			"fancy",
+			".primary-font",
+			"p>",
+			"p",
+			"hej",
+			".section-single",
+			".fancy",
+			".fancy()",
+			" woocommerce-checkout",
+			"select",
+			"scroll",
+			"add-to-cart",
+			"place-order",
+			"col-xs-12 col-md-8 col-md-offset-2",
+			"cart-collaterals",
+			"font-size: 1.5em",
+			".page",
+			"page",
+			".attribute-size",
+			"category",
+			"font",
+			"page-logo",
+			"woocommerce-page",
+			"fixed-to-top\"",
+			"page-header",
+			".page-header",
+			"wrap",
+			"localhost",
+			"@screen-md-min",
+			"@site-border",
+			"section-categories",
+			"0",
+			"padding",
+			"2%",
+			"@site-margin",
+			"products",
+			"hover-active",
+			"hoverImages",
+			"elementThird",
+			"\"",
+			"X",
+			"slickNext",
+			"woocommerce_product_thumbnails"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "scss/app.scss",
+					"settings":
+					{
+						"buffer_size": 474,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								287,
+								287
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "bower_components/foundation/scss/foundation.scss",
+					"settings":
+					{
+						"buffer_size": 1847,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								874,
+								874
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 1981,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								156
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/app.css",
+					"settings":
+					{
+						"buffer_size": 588270,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								588270,
+								588270
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 3667632.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "scss/site/_structure.scss",
+					"settings":
+					{
+						"buffer_size": 3524,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								370,
+								370
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"footer",
+				"wp-includes/theme-compat/footer.php"
+			],
+			[
+				"variables",
+				"wp-content/themes/atioki/assets/less/_variables.less"
+			],
+			[
+				"varia",
+				"wp-content/themes/atioki/assets/vendor/bootstrap/less/variables.less"
+			],
+			[
+				"home",
+				"wp-content/themes/atioki/assets/less/layouts/pages/_home.less"
+			],
+			[
+				"vari",
+				"wp-content/themes/atioki/assets/vendor/bootstrap/less/variables.less"
+			],
+			[
+				"font",
+				"wp-content/plugins/woocommerce/assets/css/_fonts.scss"
+			],
+			[
+				"grid.l",
+				"wp-content/themes/atioki/assets/vendor/bootstrap/less/grid.less"
+			],
+			[
+				"general",
+				"wp-content/themes/atioki/assets/less/layouts/_general.less"
+			],
+			[
+				"function",
+				"wp-includes/functions.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 432.0,
+	"status_bar_visible": true
+}

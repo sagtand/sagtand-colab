@@ -1,0 +1,70 @@
+/**
+ * FFDA menu template 
+ * for: parts/ffda-menu.php
+ * import it in app.scss
+ */
+
+//The utmost menu-container
+.ffda-menus {
+
+}
+
+//the site's title/logo that contains an h1 element
+.ffda-menu_logo {
+
+}
+
+//the actual menues. (foundationPress_top_bar_l() and foundationPress_top_bar_l() )
+.ffda-menu_section {
+	
+	//overaoul style for menues
+	.ffda-menu {
+		margin: 0;
+		li {
+			list-style-type: none;
+			margin: 0;
+			a {
+				padding: 0.5em;
+				display: block;
+			}
+			&:hover {
+				
+			}
+			&.active:not(.has-form) a:not(.button) {
+
+			}
+
+		}
+		li.has-dropdown {
+			//dropwown menu
+			ul {
+				margin: 0;
+				li {
+					a {
+
+					}
+				}
+			}
+		}
+		//Primary menu
+		&.ffda-menu_primary {
+			li {
+				a {
+
+				}
+			}
+		}
+		//Secondary menu
+		&.ffda-menu_secondary {
+			li {
+				a {
+
+				}
+			}
+		}
+		
+	}
+
+}
+
+
