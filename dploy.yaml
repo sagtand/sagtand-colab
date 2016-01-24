@@ -1,0 +1,11 @@
+live:
+    scheme: ftp
+    host: ftp.jonassandstedt.se
+    port: 21
+    user: jonassandstedt.se
+    pass: gA950123lmaz
+    check: true
+    path:
+        local: /
+        remote: /sagtand-colab/
+    exclude: [".gitignore", ".rev", "**/package.json", "*.yaml", "**/dev/**/*", "**/Gruntfile.js", "**/*.md", "*/.DS_Store", "*/node_modules", "**/*.zip"]

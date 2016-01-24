@@ -135,7 +135,7 @@ add_action( 'admin_init', 'remove_dashboard_meta' );
  */
 function custom_menu_page_removing() {
     remove_menu_page( 'edit.php' );				// Posts
-    remove_menu_page( 'edit-comments.php' );    // Comments
+    // remove_menu_page( 'edit-comments.php' );    // Comments
 }
 add_action( 'admin_menu', 'custom_menu_page_removing' );
 ?>

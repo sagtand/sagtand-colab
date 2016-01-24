@@ -15,7 +15,9 @@ wp-content/plugins/hello.php
 
 node_modules
 bower_components
+_databas
+
+.DS_Store
 
 /readme.html
 /license.txt
-
