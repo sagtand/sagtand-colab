@@ -19,17 +19,50 @@
 				<?php FoundationPress_entry_meta(); ?>
 			</header>
 			<?php do_action('foundationPress_post_before_entry_content'); ?>
-			<div class="entry-content">
+			<div class="entry-content clearfix">
 
 			<?php if ( has_post_thumbnail() ): ?>
-				<div class="row">
-					<div class="column">
-						<?php the_post_thumbnail('', array('class' => 'th')); ?>
-					</div>
+				<div class="post__image">
+					<a href="<?= wp_get_attachment_url( get_post_thumbnail_id($post->ID) ) ?>"><?php the_post_thumbnail('', array('class' => 'th')); ?></a>
 				</div>
 			<?php endif; ?>
 
 			<?php the_content(); ?>
+			<?php
+			// check if the repeater field has rows of data
+			if( have_rows('assets') ): ?>
+			 	<h4>Assets:</h4>
+			 	<ul class="assets-list">
+			 	<?php
+			 	// loop through the rows of data
+			    while ( have_rows('assets') ) : the_row();
+			    	$asset = get_sub_field('asset');
+			    	$assetTypeA = explode("/",$asset['mime_type']);
+			    	$assetType = $assetTypeA[1];
+					if ( get_sub_field('assetTitle') != '' ) { $assetTitle = get_sub_field('assetTitle'); }
+					else { $assetTitle = $asset['title']; }
+					?>
+					<li class="assets-list__asset">
+						<a href="<?= $asset['url'] ?>">
+
+							<?= $assetTitle ?>
+						</a> <span class="assets-list__type">(<?= $assetType ?>)</span>
+					</li>
+					<?php
+			        // display a sub field value
+
+			    endwhile;
+			    echo '</ul>';
+
+			else :
+
+			    // no rows found
+
+			endif;
+
+			?>
+			<a class="button alignright" href="<?= wp_get_attachment_url( $media->ID) ?>">Download <?= $postObjSingular; ?></a>
+
 			</div>
 			<footer>
 				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'FoundationPress'), 'after' => '</p></nav>' )); ?>
@@ -68,7 +101,8 @@
 						foreach( $medias as $media ): ?>
 							<div class="media__audio">
 								<?= do_shortcode('[audio src="' . wp_get_attachment_url( $media->ID) . '"]'); ?>
-							</div><?php
+							</div>
+							<?php
 						endforeach;
 						?>
 					

@@ -96,6 +96,7 @@ h1, h2, h4, h4, h5, h6 {
 
 .meta {
 	margin-bottom: 0;
+	margin-right: 0.4em;
 	font-size: 0.8em;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
@@ -104,6 +105,10 @@ h1, h2, h4, h4, h5, h6 {
 	display: inline-block;
 	padding: 0.1em 0.5em;
 	color: $primary-text;
+	em {
+		font-weight: bold;
+		text-transform: none;
+	}
 }
 
 /**
@@ -162,7 +167,9 @@ h1, h2, h4, h4, h5, h6 {
 	}
 	// .media li:nth-child(even) { margin-left: 0.5em; }
 	// .media li:nth-child(odd) { margin-right: 0.5em; }
-	
+	.post__image {
+		margin-bottom: 1em;
+	}
 
 	/**
 	 * 4.3	- Widgets
@@ -249,6 +256,9 @@ h1, h2, h4, h4, h5, h6 {
  * ----------------------------------------------------------------------------
  */
 
+.mejs-container {
+	margin-bottom: 1em;
+}
 .mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
 	background: $oil !important;
 }
