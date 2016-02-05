@@ -147,7 +147,7 @@ module.exports = function(grunt) {
 
   //Deploy/distribution: $ grunt dist
   // grunt.registerTask('dist', ['sass:dist', 'postcss:dist', 'concat', 'uglify', 'criticalcss']);
-  grunt.registerTask('dist', ['sass:dist', 'postcss:dist', 'concat', 'uglify', 'criticalcss']);
+  grunt.registerTask('dist', ['sass:dist', 'postcss:dist', 'concat', 'uglify']);
 
   //Development: $ grunt
   grunt.registerTask('default', ['sass:dev', 'postcss:dev', 'concat', 'watch']); 
