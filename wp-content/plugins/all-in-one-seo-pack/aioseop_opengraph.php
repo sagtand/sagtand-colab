@@ -77,7 +77,8 @@ if ( !class_exists( 'All_in_One_SEO_Pack_Opengraph' ) ) {
 			
 			$this->help_text = Array(
 				"setmeta" 				=> __( "Checking this box will use the Home Title and Home Description set in All in One SEO Pack, General Settings as the Open Graph title and description for your home page.", 'all-in-one-seo-pack' ),
-				"key"	  				=> __( "Your Profile Admin ID is your Facebook profile ID. You can find out your Facebook ID using the lookup tool here: https://graph.facebook.com/yourusername", 'all-in-one-seo-pack' ),
+				"key"	  				=> __( "Enter your Facebook Admin ID here. Information about how to get your Facebook Admin ID can be found at https://developers.facebook.com/docs/platforminsights/domains", 'all-in-one-seo-pack' ),
+				"appid"					=> __( "Enter your Facebook App ID here. Information about how to get your Facebook App ID can be found at https://developers.facebook.com/docs/platforminsights/domains", 'all-in-one-seo-pack'),
 				"title_shortcodes"		=> __( "Run shortcodes that appear in social title meta tags.", 'all-in-one-seo-pack' ),
 				"description_shortcodes"=> __( "Run shortcodes that appear in social description meta tags.", 'all-in-one-seo-pack' ),
 				"sitename"				=> __( "The Site Name is the name that is used to identify your website.", 'all-in-one-seo-pack' ),
@@ -134,7 +135,8 @@ if ( !class_exists( 'All_in_One_SEO_Pack_Opengraph' ) ) {
 				'fallback' => '#use-default-if-no-image-found',
 				'dimg' => '#default-og-image',
 				'meta_key' => '#use-custom-field-for-image',
-				'key' => '#profile-admins-id',
+				'key' => '#facebook-admin-id',
+				'appid' => '#facebook-app-id',
 				'categories' => '#facebook-object-type',
 				'facebook_publisher' => '#show-facebook-publisher-on-articles',
 				'facebook_author' => '#show-facebook-author-on-articles',
@@ -149,9 +151,10 @@ if ( !class_exists( 'All_in_One_SEO_Pack_Opengraph' ) ) {
 			
 			$count_desc = __( " characters. Open Graph allows up to a maximum of %s chars for the %s.", 'all-in-one-seo-pack' );
 			$this->default_options = array(
-					'scan_header'=> Array( 'name' => __( 'Scan Header', 'all-in-one-seo-pack' ), 'type' => 'custom', 'save' => true ),
+					'scan_header'	=> Array( 'name' 			=> __( 'Scan Header', 'all-in-one-seo-pack' ), 'type' => 'custom', 'save' => true ),
 					'setmeta'		=> Array( 	'name'			=> __( 'Use AIOSEO Title and Description',  'all-in-one-seo-pack'), 'type' => 'checkbox' ),
-					'key'			=> Array( 	'name'			=> __( 'Profile Admins ID',  'all-in-one-seo-pack'), 'default' => '', 'type' => 'text' ),
+					'key'			=> Array( 	'name'			=> __( 'Facebook Admin ID',  'all-in-one-seo-pack'), 'default' => '', 'type' => 'text' ),
+					'appid'			=> Array(	'name'			=> __( 'Facebook App ID', 'all-in-one-seo-pack'), 'default' => '', 'type' => 'text'),
 					'title_shortcodes' => Array('name'			=> __( 'Run Shortcodes In Title', 'all-in-one-seo-pack' ) ),
 					'description_shortcodes' => Array('name'	=> __( 'Run Shortcodes In Description', 'all-in-one-seo-pack' ) ),
 					'sitename'		=> Array( 	'name'			=> __( 'Site Name',  'all-in-one-seo-pack' ), 'default'	=> get_bloginfo('name'), 'type' => 'text' ),
@@ -249,7 +252,7 @@ if ( !class_exists( 'All_in_One_SEO_Pack_Opengraph' ) ) {
 
 			$this->locations = array(
 				'opengraph'	=> 	Array( 'name' => $this->name, 'prefix' => 'aiosp_', 'type' => 'settings',
-									   'options' => Array('scan_header', 'setmeta', 'key', 'sitename', 'title_shortcodes', 'description_shortcodes', 'hometitle', 'description', 'homeimage', 'hometag', 'generate_descriptions', 'defimg',
+									   'options' => Array('scan_header', 'setmeta', 'key', 'appid', 'sitename', 'title_shortcodes', 'description_shortcodes', 'hometitle', 'description', 'homeimage', 'hometag', 'generate_descriptions', 'defimg',
 									   'fallback', 'dimg', 'dimgwidth', 'dimgheight', 'meta_key', 'categories', 'defcard', 'profile_links', 'person_or_org', 'social_name', 'twitter_site', 'twitter_creator', 'twitter_domain', 'gen_tags', 'gen_keywords', 'gen_categories',
 									   'gen_post_tags', 'types', 'facebook_publisher', 'facebook_author' ) ),
 				'settings'	=>	Array(	'name'		=> __('Social Settings', 'all-in-one-seo-pack'),
@@ -283,7 +286,7 @@ if ( !class_exists( 'All_in_One_SEO_Pack_Opengraph' ) ) {
 				'facebook' => Array(
 						'name' => __( 'Facebook Settings', 'all-in-one-seo-pack' ),
 						'help_link' => 'http://semperplugins.com/documentation/social-meta-module/',
-						'options' => Array( 'key', 'types', 'gen_tags', 'gen_keywords', 'gen_categories', 'gen_post_tags', 'categories', 'facebook_publisher', 'facebook_author' )
+						'options' => Array( 'key', 'appid', 'types', 'gen_tags', 'gen_keywords', 'gen_categories', 'gen_post_tags', 'categories', 'facebook_publisher', 'facebook_author' )
 					),
 				'twitter' => Array(
 						'name' => __( 'Twitter Settings', 'all-in-one-seo-pack' ),
@@ -480,6 +483,8 @@ if ( !class_exists( 'All_in_One_SEO_Pack_Opengraph' ) ) {
 			$type = $this->type;
 			$sitename = $this->options['aiosp_opengraph_sitename'];
 			
+			$appid = $this->options['aiosp_opengraph_appid'];
+						
 			if ( !empty( $aioseop_options['aiosp_hide_paginated_descriptions'] ) ) {
 				$first_page = false;
 				if ( $aiosp->get_page_number() < 2 ) $first_page = true;				
@@ -720,6 +725,7 @@ if ( !class_exists( 'All_in_One_SEO_Pack_Opengraph' ) ) {
 						'videoheight'	=> 'og:video:height',
 						'sitename'		=> 'og:site_name',
 						'key'			=> 'fb:admins',
+						'appid'			=> 'fb:app_id',
 						'description'	=> 'og:description',
 						'section'		=> 'article:section',
 						'tag'			=> 'article:tag',

@@ -1,3 +1,15 @@
+jQuery(document).on( 'click', '.aioseop-notice .notice-dismiss', function() {
+
+    jQuery.ajax({
+        url: ajaxurl,
+        data: {
+            action: 'aioseo_dismiss_visibility_notice'
+        }
+    })
+
+})
+
+
 function aioseop_ajax_edit_meta_form( post_id, meta, nonce ) {
 	var uform = jQuery('#aioseop_'+meta+'_' + post_id);
 	var post_title = jQuery('#aioseop_label_' + meta + '_' + post_id).text();

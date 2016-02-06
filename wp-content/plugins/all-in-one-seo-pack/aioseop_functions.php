@@ -215,9 +215,11 @@ if ( !function_exists( 'aioseop_admin_head' ) ) {
 
 if ( !function_exists( 'aioseop_handle_ignore_notice' ) ) {
 	function aioseop_handle_ignore_notice() {
+		
 		if ( !empty( $_GET ) ) {
 			global $current_user;
-			$user_id = $current_user->ID;
+			$user_id = $current_user->ID;	
+					
 			if ( !empty( $_GET["aioseop_reset_notices"] ) ) {
 				delete_user_meta( $user_id, 'aioseop_ignore_notice' );
 			}
@@ -710,6 +712,8 @@ if ( !function_exists( 'aioseop_load_json_services' ) ) {
 	}
 }
 
+
+
 if ( !function_exists( 'json_encode' ) ) {
 	function json_encode( $arg ) {
 		$services_json = aioseop_load_json_services();
@@ -755,4 +759,9 @@ if ( !function_exists( 'parse_ini_string' ) ) {
 		parse_ini_filter::$buf = $string;
 		return parse_ini_file( "php://filter/read=parse_ini/resource=php://memory", $process_sections );
 	}
+}
+
+function aioseop_update_user_visibilitynotice(){
+	
+	update_user_meta( get_current_user_id(), 'aioseop_visibility_notice_dismissed', true ); 
 }

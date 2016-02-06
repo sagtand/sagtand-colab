@@ -29,7 +29,8 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 			$pages,
 			$pro_toc_items,
 			$tracking_vars,
-			$toc_items;
+			$toc_items,
+			$_plugin_file;
 
 		public
 			$available_pages;
@@ -57,6 +58,7 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 		 *
 		 */
 		public function init( $plugin_file, $plugin_name ) {
+			$this->_plugin_file = $plugin_file;
 
 			global $itsec_globals, $itsec_files, $itsec_logger, $itsec_lockout, $itsec_notify, $itsec_sync;
 
@@ -361,24 +363,25 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 
 		public function itsec_register_modules() {
 			$itset_modules = ITSEC_Modules::get_instance();
-			$itset_modules->register_module( 'strong-passwords',    'core/modules/strong-passwords'    );
-			$itset_modules->register_module( 'brute-force',         'core/modules/brute-force'         );
-			$itset_modules->register_module( 'admin-user',          'core/modules/admin-user'          );
-			$itset_modules->register_module( 'away-mode',           'core/modules/away-mode'           );
-			$itset_modules->register_module( 'backup',              'core/modules/backup'              );
-			$itset_modules->register_module( 'ban-users',           'core/modules/ban-users'           );
-			$itset_modules->register_module( 'content-directory',   'core/modules/content-directory'   );
-			$itset_modules->register_module( 'core',                'core/modules/core'                );
-			$itset_modules->register_module( 'database-prefix',     'core/modules/database-prefix'     );
-			$itset_modules->register_module( 'file-change',         'core/modules/file-change'         );
 			$itset_modules->register_module( '404-detection',       'core/modules/four-oh-four'        );
+			$itset_modules->register_module( 'away-mode',           'core/modules/away-mode'           );
+			$itset_modules->register_module( 'ban-users',           'core/modules/ban-users'           );
+			$itset_modules->register_module( 'brute-force',         'core/modules/brute-force'         );
+			$itset_modules->register_module( 'core',                'core/modules/core'                );
+			$itset_modules->register_module( 'backup',              'core/modules/backup'              );
+			$itset_modules->register_module( 'file-change',         'core/modules/file-change'         );
 			$itset_modules->register_module( 'help',                'core/modules/help'                );
 			$itset_modules->register_module( 'hide-backend',        'core/modules/hide-backend'        );
 			$itset_modules->register_module( 'ip-check',            'core/modules/ipcheck'             );
 			$itset_modules->register_module( 'malware',             'core/modules/malware'             );
-			$itset_modules->register_module( 'salts',               'core/modules/salts'               );
 			$itset_modules->register_module( 'ssl',                 'core/modules/ssl'                 );
+			$itset_modules->register_module( 'strong-passwords',    'core/modules/strong-passwords'    );
 			$itset_modules->register_module( 'tweaks',              'core/modules/tweaks'              );
+
+			$itset_modules->register_module( 'admin-user',          'core/modules/admin-user'          );
+			$itset_modules->register_module( 'salts',               'core/modules/salts'               );
+			$itset_modules->register_module( 'content-directory',   'core/modules/content-directory'   );
+			$itset_modules->register_module( 'database-prefix',     'core/modules/database-prefix'     );
 		}
 
 		/**
@@ -1106,11 +1109,26 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 
 			global $itsec_globals;
 
-			//require plugin setup information
-			if ( ! class_exists( 'ITSEC_Setup' ) ) {
-				require( trailingslashit( $itsec_globals['plugin_dir'] ) . 'core/class-itsec-setup.php' );
+			// Ensure that the uninstall routines are run only if there are no other iThemes Security plugins active.
+			$active_plugins = get_option( 'active_plugins', array() );
+			if ( ! is_array( $active_plugins ) ) {
+				$active_plugins = array();
 			}
 
+			if ( is_multisite() ) {
+				$network_plugins = (array) get_site_option( 'active_sitewide_plugins', array() );
+				$active_plugins = array_merge( $active_plugins, array_keys( $network_plugins ) );
+			}
+
+			foreach ( $active_plugins as $active_plugin ) {
+				$file = basename( $active_plugin );
+				
+				if ( in_array( $file, array( 'better-wp-security.php', 'ithemes-security-pro.php' ) ) ) {
+					return;
+				}
+			}
+
+			require_once( trailingslashit( $itsec_globals['plugin_dir'] ) . 'core/class-itsec-setup.php' );
 			ITSEC_Setup::on_uninstall();
 
 		}
@@ -1541,6 +1559,10 @@ if ( ! class_exists( 'ITSEC_Core' ) ) {
 
 			echo 'true';
 
+		}
+
+		public function get_plugin_file() {
+			return $this->_plugin_file;
 		}
 
 	}

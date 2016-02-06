@@ -616,7 +616,7 @@ $button-font-weight: $font-weight-normal;
 // $include-html-form-classes: $include-html-classes;
 
 // We use this to set the base for lots of form spacing and positioning styles
-// $form-spacing: rem-calc(16);
+$form-spacing: rem-calc(25.5);
 
 // We use these to style the labels in different ways
 // $form-label-pointer: pointer;
@@ -632,7 +632,7 @@ $form-label-bottom-margin: 0.2em;
 // $input-bg-color: $white;
 // $input-focus-bg-color: scale-color($white, $lightness: -2%);
 // $input-border-color: scale-color($white, $lightness: -20%);
-// $input-focus-border-color: scale-color($white, $lightness: -40%);
+$input-focus-border-color: $white;
 // $input-border-style: solid;
 // $input-border-width: 1px;
 // $input-border-radius: $global-radius;

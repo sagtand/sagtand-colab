@@ -111,6 +111,15 @@ h1, h2, h4, h4, h5, h6 {
 	}
 }
 
+a {
+	@include hypernate();
+}
+
+// .entry-title--loop {
+// 	display: inline-block;
+// 	float: left;
+// }
+
 /**
  * 3.0 Header, sidebar and footer
  * ----------------------------------------------------------------------------
@@ -144,6 +153,72 @@ h1, h2, h4, h4, h5, h6 {
 		}
 	}
 
+	// Loop / archive
+	// 
+	.loop__container {
+		margin-bottom: 2em;
+	}
+
+	.loop__header {
+		// color: $primary-color;
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		border-bottom: 2px solid $white;
+		margin-right: 0.5em;
+	}
+	.loop {
+		.mejs-container {
+			width: 70px !important;
+			overflow: hidden;
+			float: left;
+			margin-left: 0.5em;
+			margin-top: 16px;
+		}
+		.mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+			background: $jet !important;
+		}
+	}
+
+	
+	.entry-title--loop {
+		display: inline-block;
+	}
+	.meta--short {
+		float: right;
+		margin-left: 1em;
+	}
+	.meta--short__meta {
+		display: inline-block;
+		margin-left: 1em;
+	}
+	.loop {
+		li {
+			display: flex;
+			width: 100%;
+			@media #{$medium-up} {
+				width: 50%;
+				overflow: hidden;
+			}
+			justify-content: stretch;
+		}
+		li article {
+			flex: 1;
+			padding: 1em 1em;
+			margin-top: 1em;
+			background: $oil;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+		}
+		ul {
+			// display: flex;
+		}
+	}
+
+	.controlls {
+		display: flex;
+	}
 
 	/**
 	 * 4.2 - Posts
@@ -212,6 +287,10 @@ h1, h2, h4, h4, h5, h6 {
 
 	.comment {
 		position: relative;
+		margin-bottom: 2em;
+		p {
+			margin-bottom: 0.5em;
+		}
 	}
 	.comment-author {
 		.avatar {

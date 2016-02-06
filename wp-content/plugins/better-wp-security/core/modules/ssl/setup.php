@@ -66,6 +66,13 @@ if ( ! class_exists( 'ITSEC_SSL_Setup' ) ) {
 		}
 
 		/**
+		 * Execute module deactivation
+		 *
+		 * @return void
+		 */
+		public function execute_deactivate() {}
+
+		/**
 		 * Execute module uninstall
 		 *
 		 * @return void

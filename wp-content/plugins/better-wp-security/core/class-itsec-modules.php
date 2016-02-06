@@ -13,11 +13,10 @@ final class ITSEC_Modules {
 	private $_settings_files_loaded = false;
 
 	protected function __construct() {
-		global $itsec_globals;
+		$itsec_core = ITSEC_Core::get_instance();
 
-		register_activation_hook( $itsec_globals['plugin_file'], array( $this, 'run_activation' ) );
-		register_deactivation_hook( $itsec_globals['plugin_file'], array( $this, 'run_deactivation' ) );
-		register_uninstall_hook( $itsec_globals['plugin_file'], array( 'self', 'run_uninstall' ) );
+		register_activation_hook( $itsec_core->get_plugin_file(), array( $this, 'run_activation' ) );
+		register_deactivation_hook( $itsec_core->get_plugin_file(), array( $this, 'run_deactivation' ) );
 
 		// Action triggered from another part of Security which runs when the settings page is loaded.
 		add_action( 'itsec_load_settings_page', array( $this, 'load_settings_page' ) );
@@ -43,10 +42,11 @@ final class ITSEC_Modules {
 	 * @return bool|WP_Error True on success and WP_Error on failure
 	 */
 	public function register_module( $slug, $path ) {
+		$itsec_core = ITSEC_Core::get_instance();
+
 		$slug = sanitize_title_with_dashes( $slug );
 		if ( $path[0] != DIRECTORY_SEPARATOR ) {
-			global $itsec_globals;
-			$path = path_join( $itsec_globals['plugin_dir'], $path );
+			$path = path_join( dirname( $itsec_core->get_plugin_file() ), $path );
 		}
 		$this->_module_paths[ $slug ] = $path;
 		return true;
@@ -132,24 +132,25 @@ final class ITSEC_Modules {
 		if ( ! is_array( $this->_active_modules ) ) {
 			// The modules in this list are active when the plugin is first activated.
 			$this->_active_modules = apply_filters( 'itsec-default-active-modules', array(
-				'strong-passwords',
-				'brute-force',
-				'admin-user',
-				'away-mode',
-				'backup',
-				'ban-users',
-				'content-directory',
-				'core',
-				'database-prefix',
-				'file-change',
 				'404-detection',
+				'away-mode',
+				'ban-users',
+				'brute-force',
+				'core',
+				'backup',
+				'file-change',
 				'help',
 				'hide-backend',
 				'ip-check',
 				'malware',
-				'salts',
 				'ssl',
+				'strong-passwords',
 				'tweaks',
+
+				'admin-user',
+				'salts',
+				'content-directory',
+				'database-prefix',
 			) );
 		}
 
@@ -240,6 +241,11 @@ final class ITSEC_Modules {
 	}
 
 	public static function run_uninstall() {
+		$itsec_modules = self::get_instance();
+		$itsec_modules->uninstall();
+	}
+
+	public function uninstall() {
 		$this->load_module_file( 'setup.php' );
 
 		do_action( 'itsec_modules_do_plugin_uninstall' );
