@@ -62,20 +62,6 @@ module.exports = function(grunt) {
       }
     },
 
-    // criticalcss: {
-    //   custom: {
-    //     options: {
-    //       url: "http://localhost:8888/fully-flared-wp4-startup/",
-    //       width: 1200,
-    //       height: 900,
-    //       outputfile: "css/critical.css",
-    //       filename: "css/app.css", // Using path.resolve( path.join( ... ) ) is a good idea here
-    //       buffer: 800*1024,
-    //       ignoreConsole: false
-    //     }
-    //   }
-    // },
-
     copy: {
       scripts: {
         expand: true,
@@ -143,7 +129,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-postcss');
-  // grunt.loadNpmTasks('grunt-criticalcss');
 
   //Deploy/distribution: $ grunt dist
   // grunt.registerTask('dist', ['sass:dist', 'postcss:dist', 'concat', 'uglify', 'criticalcss']);

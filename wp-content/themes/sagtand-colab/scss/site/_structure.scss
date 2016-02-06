@@ -191,14 +191,7 @@ a {
 	.entry-title--loop {
 		display: inline-block;
 	}
-	.meta--short {
-		float: right;
-		margin-left: 1em;
-	}
-	.meta--short__meta {
-		display: inline-block;
-		margin-left: 1em;
-	}
+
 	.loop {
 		li {
 			display: flex;
@@ -211,12 +204,27 @@ a {
 		}
 		li article {
 			flex: 1;
-			padding: 1em 1em;
+			padding: 2em 1em;
 			margin-top: 1em;
 			background: $oil;
+			width: 100%;
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+			flex-direction: column;
+			.meta--short {
+				display: block;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+			.content {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+			}
 		}
 		ul {
 			// display: flex;
@@ -225,6 +233,11 @@ a {
 
 	.controlls {
 		display: flex;
+	}
+
+	//hide midi-links
+	.loop a.wp-embedded-audio {
+		display: none;
 	}
 
 	/**
