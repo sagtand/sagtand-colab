@@ -59,9 +59,16 @@
 			    // no rows found
 
 			endif;
-
 			?>
-			<a class="button alignright" href="<?= wp_get_attachment_url( $media->ID) ?>">Download <?= $postObjSingular; ?></a>
+			<div class="buttons alignright">
+				<?php
+				$downloads = get_attached_media( 'audio', $value->ID );
+				foreach( $downloads as $media ): ?>
+					<a download class="button" href="<?= $media->guid ?>">Download <?= $media->post_title ?></a>
+					<?php
+				endforeach;
+				?>
+			</div>
 
 			</div>
 			<footer>

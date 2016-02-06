@@ -137,7 +137,14 @@ a {
  * 4.0 - Content
  * ----------------------------------------------------------------------------
  */
-
+	
+	.button {
+		margin-right: 0.4em;
+	}
+	.alignright .button {
+		margin-right: 0;
+		margin-left: 0.4em;
+	}
 
 	/**
 	 * 4.1 - Pages
