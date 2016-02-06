@@ -28,43 +28,18 @@
 			<?php endif; ?>
 
 			<?php the_content(); ?>
-			<?php
-			// check if the repeater field has rows of data
-			if( have_rows('assets') ): ?>
-			 	<h4>Assets:</h4>
-			 	<ul class="assets-list">
-			 	<?php
-			 	// loop through the rows of data
-			    while ( have_rows('assets') ) : the_row();
-			    	$asset = get_sub_field('asset');
-			    	$assetTypeA = explode("/",$asset['mime_type']);
-			    	$assetType = $assetTypeA[1];
-					if ( get_sub_field('assetTitle') != '' ) { $assetTitle = get_sub_field('assetTitle'); }
-					else { $assetTitle = $asset['title']; }
-					?>
-					<li class="assets-list__asset">
-						<a href="<?= $asset['url'] ?>">
-
-							<?= $assetTitle ?>
-						</a> <span class="assets-list__type">(<?= $assetType ?>)</span>
-					</li>
-					<?php
-			        // display a sub field value
-
-			    endwhile;
-			    echo '</ul>';
-
-			else :
-
-			    // no rows found
-
-			endif;
-			?>
+			
+			<h4>Download:</h4>
+			
 			<div class="buttons alignright">
 				<?php
 				$downloads = get_attached_media( 'audio', $value->ID );
-				foreach( $downloads as $media ): ?>
-					<a download class="button" href="<?= $media->guid ?>">Download <?= $media->post_title ?></a>
+				foreach( $downloads as $media ): //print_r($media) 
+			    	$mediaMimeArray = explode("/",$media->post_mime_type);
+			    	$mediaMime = $mediaMimeArray[1];
+					?>
+
+					<a download class="button" href="<?= $media->guid ?>"><?= $media->post_title ?> <em>(<?= $mediaMime ?>)</em></a>
 					<?php
 				endforeach;
 				?>
