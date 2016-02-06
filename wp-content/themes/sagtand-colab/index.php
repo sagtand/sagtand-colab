@@ -6,7 +6,7 @@
 		<div class="loop__container">
 			<?php 
 			// List 5 latest atoms
-			$atoms = new WP_Query( array( 'post_type' => 'atoms'));
+			$atoms = new WP_Query( array( 'posts_per_page' => 4, 'post_type' => 'atoms'));
 
 			// Atoms loop
 			if ( $atoms->have_posts() ) { ?>
@@ -31,7 +31,7 @@
 		<div class="loop__container">
 			<?php 
 			// List 5 latest molecules
-			$molecules = new WP_Query( array( 'post_type' => 'molecules'));
+			$molecules = new WP_Query( array( 'posts_per_page' => 4, 'post_type' => 'molecules'));
 
 			// molecules loop
 			if ( $molecules->have_posts() ) { ?>
@@ -56,7 +56,7 @@
 		<div class="loop__container">
 			<?php 
 			// List 5 latest organisms
-			$organisms = new WP_Query( array( 'post_type' => 'organisms'));
+			$organisms = new WP_Query( array( 'posts_per_page' => 4, 'post_type' => 'organisms'));
 
 			// organisms loop
 			if ( $organisms->have_posts() ) { ?>
@@ -81,7 +81,7 @@
 		<div class="loop__container">
 			<?php 
 			// List 5 latest parts
-			$parts = new WP_Query( array( 'post_type' => 'parts'));
+			$parts = new WP_Query( array( 'posts_per_page' => 4, 'post_type' => 'parts'));
 
 			// parts loop
 			if ( $parts->have_posts() ) { ?>
@@ -106,7 +106,7 @@
 		<div class="loop__container">
 		<?php 
 		// List 5 latest songs
-		$songs = new WP_Query( array( 'post_type' => 'songs'));
+		$songs = new WP_Query( array( 'posts_per_page' => 4, 'post_type' => 'songs'));
 
 		// songs loop
 		if ( $songs->have_posts() ) { ?>
