@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=mrtor
 Tags: seo, all in one seo, search engine optimization, google, sitemap
 Requires at least: 3.3
 Tested up to: 4.4
-Stable tag: 2.2.7.6.1
+Stable tag: 2.2.7.6.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ All in One SEO Pack is a WordPress SEO plugin to automatically optimize your Wor
 
 == Description ==
 
-All in One SEO Pack **Optimizes** your WordPress blog for SEO (**Search Engine Optimization**).
+**All in One SEO Pack** Optimizes your WordPress blog for SEO (**Search Engine Optimization**).
 
 **[Upgrade to Pro Version](http://semperplugins.com/plugins/all-in-one-seo-pack-pro-version/)**
 
@@ -38,7 +38,6 @@ First created in 2007, see why AIOSEO is the most downloaded plugin for WordPres
 * Compatibility with many other plugins
 * Translated into 57 languages
 
-
 Follow me on Twitter to keep up with the latest updates [Michael
 Torbert](http://twitter.com/michaeltorbert/)
 
@@ -63,22 +62,40 @@ All in One SEO Pack [Changelog](http://semperfiwebdesign.com/documentation/all-i
 
 == Frequently Asked Questions ==
 
-Please read these **[FAQs](http://semperfiwebdesign.com/documentation/all-in-one-seo-pack/all-in-one-seo-faq/)** before requesting support for SEO from the
+Please visit our complete **[Documentation](http://semperplugins.com/documentation/)** before requesting support for SEO from the
 **[All in One SEO Pack Support Forum](http://semperplugins.com/support/)**
 
 [Translations](http://semperfiwebdesign.com/documentation/all-in-one-seo-pack/translations-for-all-in-one-seo-pack/)
 
 == Upgrade Notice ==
 
+= 2.2.7.6.2 =
+
+-Additional WooCommerce support
+
+= 2.2.7.6.1 =
+
+-New Indonesian translation – Thanks to Rio Bermano
+-Updated translations files (57 total languages!)
+-Improved support for WooCommerce when the Home page is also set as the Shop page
+-Social Meta Module – Update for Facebook’s Admin App ID
+
+= 2.2.7.6 -
+
+-Social Meta Module – Added support for Facebook App ID
+-Added a warning message when Search Engine Visibility is enabled in WordPress Reading Settings
+-Various under-the-hood code improvements
+-Changed when Noindex Settings are displayed in relation to Custom Post Type Settings
+
 = 2.2.7.5 =
-fixes:
-category capitalization fixes
+-fixes:
+-category capitalization fixes
 
 enhancements:
-futureproofing the performance function for PHP7,8
-futureproofing the open graph and social meta function for PHP7,8
-futureproofing the file editor function for PHP7,8
-futureproofing the import-export function for PHP7,8
+-futureproofing the performance function for PHP7,8
+-futureproofing the open graph and social meta function for PHP7,8
+-futureproofing the file editor function for PHP7,8
+-futureproofing the import-export function for PHP7,8
 
 = 2.2.7.4 = 
 
