@@ -204,7 +204,7 @@ a {
 		}
 		li article {
 			flex: 1;
-			padding: 2em 1em;
+			padding: 1em 1em;
 			margin-top: 1em;
 			background: $oil;
 			width: 100%;
@@ -236,7 +236,7 @@ a {
 	}
 
 	//hide midi-links
-	.loop a.wp-embedded-audio {
+	a.wp-embedded-audio {
 		display: none;
 	}
 
