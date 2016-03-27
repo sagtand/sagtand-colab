@@ -13,7 +13,7 @@ if( have_rows('assets') ): ?>
 		$filetype = wp_check_filetype( $asset_url );
 
 		if( !$title ):
-			$title = get_the_title($asset->ID);
+			$title = get_the_title($asset['id']);
 		endif;
 		?>
 		
