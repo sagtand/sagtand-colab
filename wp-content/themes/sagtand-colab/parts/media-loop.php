@@ -13,7 +13,7 @@ if( have_rows('sounds') ): ?>
 		$content = get_sub_field('description');
 
 		if( !$title ):
-			$title = get_the_title($media->ID);
+			$title = get_the_title($media['id']);
 		endif;
 		?>
 
