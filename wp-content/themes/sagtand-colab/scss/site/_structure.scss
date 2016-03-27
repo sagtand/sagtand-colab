@@ -1,0 +1,441 @@
+/**
+ * Table of Contents for FoundationPress:
+ *
+ * 1.0 - Custom settings
+ * 2.0 - Typography
+ * 3.0 - Header, sidebar and footer
+ * 4.0 - Content
+ *	4.1 - Pages
+ *	4.2 - Posts
+ *	4.3	- Widgets
+ *	4.4 - Comments
+  *	4.5 - Lists
+  * 4.6 - Forms
+ * 5.0 - Plugins
+ * 6.0 - Media Queries
+
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1.0 Custom settings
+ * ----------------------------------------------------------------------------
+ */
+
+
+// Reset margin and padding on figure element
+figure { 
+	margin: 0; 
+	padding: 0;
+}
+
+// Add some basic styling for figcaption element
+figcaption {
+	margin-bottom: rem-calc(20);
+	margin-top: rem-calc(10); 
+	color: #6f6f6f; 
+}
+
+// Add the alignment classes used by the WordPress media library
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+blockquote.alignleft,
+img.alignleft {
+	margin: rem-calc(7) rem-calc(24) rem-calc(7) 0;
+}
+
+.wp-caption.alignleft {
+	margin: rem-calc(7) rem-calc(14) rem-calc(7) 0;
+}
+
+blockquote.alignright,
+img.alignright {
+	margin: rem-calc(7) 0 rem-calc(7) rem-calc(24);
+}
+
+// Fix the issue where the WP adminbar overlaps the mobile menu
+#wpadminbar {
+	position: fixed !important;
+}
+
+// Adding some padding on rows
+.container > .row {
+	padding: 4% 2%;
+	@media #{$medium-up} {
+		padding: 2% 10%;
+	}
+}
+
+// Delete border on the last post
+.post:last-child hr {
+	border: none;
+}
+
+/**
+ * 2.0 Typography
+ * ----------------------------------------------------------------------------
+ */
+
+h1, h2, h4, h4, h5, h6 {
+	@include hypernate();
+}
+
+.meta {
+	margin-bottom: 0;
+	margin-right: 0.4em;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	background: $primary-color;
+	border-radius: $global-radius;
+	display: inline-block;
+	padding: 0.1em 0.5em;
+	color: $primary-text;
+	em {
+		font-weight: bold;
+		text-transform: none;
+	}
+}
+
+a {
+	@include hypernate();
+}
+
+// .entry-title--loop {
+// 	display: inline-block;
+// 	float: left;
+// }
+
+/**
+ * 3.0 Header, sidebar and footer
+ * ----------------------------------------------------------------------------
+ */
+
+// Add some whitespace above the footer for medium-up screens
+@media #{$medium-up} {
+	footer.row {
+		margin-top: rem-calc(60);
+	}
+}
+
+//sidebar
+			
+			
+.media 
+
+/**
+ * 4.0 - Content
+ * ----------------------------------------------------------------------------
+ */
+	
+	.button {
+		margin-right: 0.4em;
+	}
+	.alignright .button {
+		margin-right: 0;
+		margin-left: 0.4em;
+	}
+
+	/**
+	 * 4.1 - Pages
+	 * ------------------------------------
+	 */
+
+	 // Hero
+
+	.bg-color {
+		background: $primary-color;
+		h1, h2, h3, h4, h5, h6, p, span {
+			color: $white;
+		}
+	}
+
+	// Loop / archive
+	// 
+	.loop__container {
+		margin-bottom: 2em;
+	}
+
+	.loop__header {
+		// color: $primary-color;
+		font-size: 1em;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		border-bottom: 2px solid $white;
+		margin-right: 0.5em;
+	}
+	.loop, .media__audio {
+		.mejs-container {
+			width: 70px !important;
+			overflow: hidden;
+			float: left;
+		}
+		.mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+			background: $jet !important;
+		}
+	}
+	.loop {
+		.mejs-container {
+			margin-left: 0.5em;
+			margin-top: 16px;
+		}
+	}
+	.media__audio {
+		.mejs-container {
+			margin-bottom: 0;
+		}
+	}
+
+	
+	.entry-title--loop {
+		display: inline-block;
+	}
+
+	.loop {
+		li {
+			display: flex;
+			width: 100%;
+			@media #{$medium-up} {
+				width: 50%;
+				overflow: hidden;
+			}
+			justify-content: stretch;
+		}
+		li article {
+			flex: 1;
+			padding: 1em 1em;
+			margin-top: 1em;
+			background: $oil;
+			width: 100%;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: column;
+			.meta--short {
+				display: block;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+			.content {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+
+			}
+		}
+		ul {
+			// display: flex;
+		}
+	}
+
+	.media-loop {
+		margin: 0;
+		.media-item {
+			padding: 1em 1em;
+			margin-top: 1em;
+			background: $oil;
+			width: 100%;
+			@media #{$medium-up} {
+				display: flex;
+				justify-content: space-between;
+			}
+			.content {
+				flex: 1;
+				margin-right: 1em;
+			}
+			.buttons {
+				margin-top: 0.6em;
+			}
+		}
+	}
+
+	.assets-loop {
+		margin: 1em 0 0;
+		list-style-type: none;
+	}
+
+	.controlls {
+		display: flex;
+	}
+
+	//hide midi-links
+	a.wp-embedded-audio {
+		display: none;
+	}
+
+	/**
+	 * 4.2 - Posts
+	 * ------------------------------------
+	 */
+	
+	//media
+	.media {
+		list-style-type: none;
+		margin: 0;
+		@extend .clearfix;
+		// li {
+		// 	margin: 0 0 1em 0;
+		// 	width: 50%;
+		// 	width: calc(50% - 0.5em);
+		// 	background: $oil;
+		// 	padding: 1em;
+		// 	border-radius: $global-radius;
+		// 	float: left;
+		// }
+		.media-item {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 1em;
+		}
+	}
+	// .media li:nth-child(even) { margin-left: 0.5em; }
+	// .media li:nth-child(odd) { margin-right: 0.5em; }
+	.post__image {
+		margin-bottom: 1em;
+	}
+
+	/**
+	 * 4.3	- Widgets
+	 * ------------------------------------
+	 */
+	
+	.widget.widget_postmeta {
+		background: $oil;
+		padding: 1em;
+		margin-bottom: 2em;
+	}
+
+
+	/**
+	 * 4.4 - Comments
+	 * ------------------------------------
+	 */
+
+	#commentform {
+		textarea {
+			width: 100%;
+		}
+	}
+
+	#respond, #comments {
+		background: $oil;
+		border-radius: $global-radius;
+		padding: 1em;
+		margin-top: 2em; 
+	}
+	#comments {
+		padding-left: 3em;
+	}
+
+	.commentlist li {
+		list-style-type: none;
+		margin: 0;
+		@extend .clearfix;
+	}
+
+	.comment {
+		position: relative;
+		margin-bottom: 2em;
+		p {
+			margin-bottom: 0.5em;
+		}
+	}
+	.comment-author {
+		.avatar {
+			width: 3.4em;
+			height: 3.4em;
+			position: absolute;
+			top: 0;
+			left: -3.95em;
+			border-radius: $global-rounded;
+			border: 0.3em solid $oil;
+			margin-right: 1em;
+		}
+		.fn {
+			display: inline-block;
+			font-size: 0.8em;
+
+		}
+	}
+
+	ol li ul, ol li ol {
+		margin-left: 2rem;
+	}
+
+	/**
+	 * 4.5 - Lists
+	 * ------------------------------------
+	 */
+
+	// Insert styles here
+
+
+	/**
+	 * 4.6 Forms
+	 * ------------------------------------
+	 */
+
+	// Insert styles here
+
+
+/**
+ * 5.0 Plugins
+ * ----------------------------------------------------------------------------
+ */
+
+.mejs-container {
+	margin-bottom: 1em;
+}
+.mejs-container, .mejs-embed, .mejs-embed body, .mejs-container .mejs-controls {
+	background: $oil !important;
+}
+.mejs-controls .mejs-time-rail .mejs-time-current {
+	background: $primary-color !important;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-total {
+	background: $jet !important;
+}
+.mejs-controls .mejs-time-rail .mejs-time-total, .mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: $jet !important;
+}
+.mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+	background: $primary-color !important;
+}
+
+/**
+ * 6.0 - Media Queries
+ * ----------------------------------------------------------------------------
+ */
+
+// Insert styles here
+
+@media #{$small-up} { }
+@media #{$small-only} { }
+
+@media #{$medium-up} { }
+@media #{$medium-only} { }
+
+@media #{$large-up} { }
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }

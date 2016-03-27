@@ -13,6 +13,14 @@ wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 
+node_modules
+bower_components
+_databas
+
+.DS_Store
+
 /readme.html
 /license.txt
-
+_patterns
+wp-content/themes/sagtand-colab/css/critical.css
+wp-content/themes/sagtand-colab/css/critical.css.map

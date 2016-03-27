@@ -1,0 +1,31 @@
+live:
+    scheme: ftp
+    host: ftp.jonassandstedt.se
+    port: 21
+    user: jonassandstedt.se
+    pass: gA950123lmaz
+    check: true
+    path:
+        local: /
+        remote: /sagtand-colab/
+    exclude: [".gitignore", ".rev", "**/package.json", "*.yaml", "**/dev/**/*", "**/Gruntfile.js", "**/*.md", "*/.DS_Store", "*/node_modules", "**/*.zip"]
+    include:
+        "wp-content/themes/sagtand-colab/css/app.css": "wp-content/themes/sagtand-colab/css/"
+        "wp-content/themes/sagtand-colab/js/app.js": "wp-content/themes/sagtand-colab/js/"
+
+dev-uploads:
+    scheme: ftp
+    host: ftp.jonassandstedt.se
+    port: 21
+    user: jonassandstedt.se
+    pass: gA950123lmaz
+    check: true
+    path:
+        local: /
+        remote: /sagtand-colab/
+    exclude: ["*.yaml", "wp-content/*/*/node_modules/"]
+    include:
+        "wp-content/uploads/*/*/*.*": "wp-content/uploads/"
+        "wp-content/themes/sagtand-colab/css/app.css": "wp-content/themes/sagtand-colab/css/"
+        "wp-content/themes/sagtand-colab/js/app.js": "wp-content/themes/sagtand-colab/js/"
+

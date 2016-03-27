@@ -1,0 +1,39 @@
+/**
+ * Mixins
+ * ----------------------------------------------------------------------------
+ */
+
+@mixin hypernate() {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+
+@mixin placeholders {
+    color: $white;
+    opacity: 0.8;
+    font-family: $body-font-family;
+    font-weight: 300;
+ }
+
+@mixin placeholder-style {
+    &::-webkit-input-placeholder {
+       @include placeholders;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+       @include placeholders;  
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+       @include placeholders;
+    }
+
+    &:-ms-input-placeholder {  
+       @include placeholders; 
+    }
+}

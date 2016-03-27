@@ -1,0 +1,320 @@
+/**
+ * FFDA menu - top menu 
+ * for: parts/ffda-menu.php
+ * import it in app.scss
+ */
+
+//The utmost menu-container
+.ffda-menus {
+	background: $primary-color;
+	padding: 1em 0 0;
+	position: relative;
+
+	//Typography
+	li a {
+		font-weight: 100;
+	    font-size: 1.5em;
+	    text-transform: uppercase;
+	    letter-spacing: 0.1em;
+	    text-decoration: none;
+		@media #{$medium-up} {
+			font-size: 0.8em;
+			letter-spacing: 0.3em;
+		}
+	}
+
+}
+
+//the site's title/logo that contains an h1 element
+.ffda-menus_logo h1 {
+	text-align: center;
+	a {
+		color: $primary-text;
+	}
+	padding: 0 1.4em 1.2em;
+	@media #{$medium-up} { padding-bottom: 0 }
+}
+
+//the toggle button
+.admin-bar .icon-menu {
+	top: 4.5em;
+}
+
+.icon-menu {
+	background: $primary-color;
+	display: block;
+	width: 2.5em;
+	height: 2.5em;
+
+	position: fixed;
+	top: 1.75em;
+	left: 4%;
+	border-radius: 50%;
+
+	cursor: pointer;
+	z-index: 100;
+	&:before, &:after {
+		content:"";
+		display: block;
+		width: 60%;
+		height: 4px;
+		background: $primary-text;
+		position: absolute;
+		left: 20%;
+		border-radius: 0.8em;
+		transition: all $transition-speed;
+	}  
+	&:before {
+		top: 0.8em;
+	}
+	&:after {
+		bottom: 0.8em;
+	}
+	&.ffda-menus_open{
+		&:before {
+			animation: menu_before 0.8s forwards;
+		}
+		&:after {
+			animation: menu_after 0.8s forwards;
+		}	
+	}
+	&.ffda-menus_closed{
+		&:before {
+			animation: menu_before_invert 0.4s forwards;
+		}
+		&:after {
+			animation: menu_after_invert 0.4s forwards;
+		}
+	}
+
+	@media #{$medium-up} { 
+		display: none;
+		visibility: hidden;
+	}
+}
+@keyframes menu_before {
+	0% {top: 0.8em; transform: rotateZ(0deg);}
+	40% {top: 0.2em; transform: rotateZ(0deg);}
+	100% {top: 1.1em; transform: rotateZ(45deg);}
+}
+@keyframes menu_after {
+	0% {bottom: 0.8em; transform: rotateZ(0deg);}
+	40% {bottom: 0.2em; transform: rotateZ(0deg);}
+	100% {bottom: 1.1em; transform: rotateZ(-45deg);}
+}
+
+@keyframes menu_before_invert {
+	0% {top: 1.1em; transform: rotateZ(45deg);}
+	100% {top: 0.8em; transform: rotateZ(0deg);}
+}
+@keyframes menu_after_invert {
+	0% {bottom: 1.1em; transform: rotateZ(-45deg);}
+	100% {bottom: 0.8em; transform: rotateZ(0deg);}
+}
+
+.ffda-menus_container {
+	display: none;
+	position: fixed;
+	top:0;
+	width: 100%;
+	height: 120vh;
+	padding: 3em 0 2em;
+	box-sizing: border-box;
+
+	z-index: 2;
+	background: $primary-color;
+	overflow: auto;
+
+	@media #{$medium-up} { 
+		position: inherit;
+		display: flex !important;
+		height: auto;
+		padding: 0;
+		overflow: visible;
+	}
+	@media #{$large-up} {
+		max-width: lower-bound($large-range);
+		margin: 0 auto;
+	}
+}
+
+.ffda-menu_wrapper-primary {
+	@media #{$medium-up} { 
+		flex: 1;
+	}
+}
+
+//overaoul style for menues
+.ffda-menu {
+	margin: 0;
+
+
+	@media #{$medium-up} { 
+		display: flex;
+		//@include flexbox;
+		justify-content: space-between;
+		//@include justify-content(space-between);
+		padding: 0 2em;
+	}
+
+	li {
+		text-align: center;
+		list-style-type: none;
+		margin: 0;
+		display: inline-block;
+		width: 100%;
+		@media #{$medium-up} { 
+			width: auto;
+			//@include flex;
+			flex: 1; 
+		}
+		a {
+			padding: 0.5em;
+			@media #{$medium-up} { 
+				padding: 1.5em 0.5em;
+			}
+			display: block;
+			color: $primary-text;
+			transition: opacity $transition-speed;
+			//@include transition(opacity, $transition-speed);
+		}
+		&:hover {
+			a {
+				opacity: 0.8;
+			}
+		}
+		&.active {
+			a {
+
+			}
+		}
+	}
+	li.has-dropdown {
+		//dropwown menu
+		position: relative;
+		@media #{$medium-up} {
+			position: inherit;
+		}
+		ul {
+			display: block;
+			width: 100%; //fallback
+			width: 100vw;
+			margin: 0;
+			padding: 0 10% 0;
+			padding: 0 10vw 0;
+			overflow: hidden;
+			text-align: center;
+			
+			position: relative;
+			top: 0;
+			font-size: 0;
+			
+			left: 0; 
+			z-index: 10;
+			
+			background: $secondary-color;
+			height: auto;
+
+			//animated values
+			max-height: 0;
+			transition: all $transition-speed;
+			transform: translate3d(0,0,0);
+
+			@media #{$medium-up} { 
+				display: flex;
+				align-items: center;
+				position: absolute; 
+				top: 9.2em;
+				font-size: inherit;
+				line-height: inherit;
+			}
+			@media #{$large-up} {
+			}
+			//@include transition(height, $transition-speed);
+			li {
+				//@include flex;
+				display: block;
+				opacity: 0;
+				text-align: center;
+				transition: opacity $transition-speed 0.2s;
+				@media #{$medium-up} { flex: 1; }
+				@media #{$large-up} { 
+				}
+			}
+
+		}
+		&.hover {
+			animation: anim_gradient 0.2s forwards;
+			background: $secondary-color;
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 90%, $secondary-color 90%);
+			ul {
+				min-height: 10em;
+				max-height: 20em;
+				font-size: inherit;
+				line-height: inherit;
+
+				li {
+					opacity: 1;
+					display: inline-block;
+					a {
+
+					}
+				}
+			}
+		}
+	}
+	//Primary menu
+	&.ffda-menu_primary {
+		li {
+			a {
+
+			}
+		}
+	}
+	//Secondary menu
+	&.ffda-menu_secondary {
+		li {
+			a {
+
+			}
+		}
+	}
+	
+}
+//Anim for the line bakground on has-dropdown .hover
+@keyframes anim_gradient {
+	0% {background: linear-gradient(to bottom, rgba(255,255,255,0) 100%, $secondary-color 100%);}
+	20% {background: linear-gradient(to bottom, rgba(255,255,255,0) 98%, $secondary-color 98%);}
+	40% {background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $secondary-color 96%);}
+	60% {background: linear-gradient(to bottom, rgba(255,255,255,0) 94%, $secondary-color 94%);}
+	60% {background: linear-gradient(to bottom, rgba(255,255,255,0) 92%, $secondary-color 92%);}
+	110% {background: linear-gradient(to bottom, rgba(255,255,255,0) 90%, $secondary-color 90%);}
+}
+.no-flexbox {
+	.ffda-menus_container {
+		&:after {
+			content: "";
+	 		display: table;
+	 		clear: both;
+		}
+		.ffda-menu {
+			&.ffda-menu_primary {
+			float: left;
+			li {
+				a {
+
+				}
+			}
+		}
+		//Secondary menu
+		&.ffda-menu_secondary {
+			float: right;
+			li {
+				a {
+
+				}
+			}
+		}
+		}
+	}
+}
