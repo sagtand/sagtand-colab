@@ -12,14 +12,8 @@ $postObjSingular = $postObj->labels->singular_name;
 			<header>
 				<h3 class="entry-title--loop"><a href="<?= get_the_permalink() ?>"><?php the_title(); ?></a></h3>
 			</header>
-
-			<?php //get all audio-clips
-			$medias = get_attached_media( 'audio', get_the_ID() );
-			foreach( $medias as $media ): ?>
-				<?= do_shortcode('[audio src="' . wp_get_attachment_url( $media->ID) . '"]'); ?>
-				<?php
-			endforeach;
-			?>
+			<?php $media_id = get_the_ID();
+			include(locate_template('parts/latest-media.php')); ?>
 		</div>
 		
 	</article>

@@ -27,23 +27,10 @@
 				</div>
 			<?php endif; ?>
 
-			<?php the_content(); ?>
-			
-			<h4>Download:</h4>
-			
-			<div class="buttons alignright">
-				<?php
-				$downloads = get_attached_media( 'audio', $value->ID );
-				foreach( $downloads as $media ): //print_r($media) 
-			    	$mediaMimeArray = explode("/",$media->post_mime_type);
-			    	$mediaMime = $mediaMimeArray[1];
-					?>
+			<?php //the_content(); ?>
 
-					<a download class="button" href="<?= $media->guid ?>"><?= $media->post_title ?> <em>(<?= $mediaMime ?>)</em></a>
-					<?php
-				endforeach;
-				?>
-			</div>
+			<?php include('parts/media-loop.php'); ?>
+			<?php include('parts/assets-loop.php'); ?>
 
 			</div>
 			<footer>
@@ -73,21 +60,15 @@
 			<h3>Using following <?= $childrenType ?>:</h3>
 			<ul class="media">
 			<?php foreach( $values as $value ): ?>
-				<li><div class="media__title">
+				<li class="media-item"><div class="media__title">
 						<a href="<?php echo get_permalink( $value->ID ); ?>">
 							<?php echo get_the_title( $value->ID ); ?>
 						</a>
 					</div>
-						<?php //get all audio-clips
-						$medias = get_attached_media( 'audio', $value->ID );
-						foreach( $medias as $media ): ?>
-							<div class="media__audio">
-								<?= do_shortcode('[audio src="' . wp_get_attachment_url( $media->ID) . '"]'); ?>
-							</div>
-							<?php
-						endforeach;
-						?>
-					
+						<div class="media__audio">
+							<?php $media_id = $value->ID;
+							include(locate_template('parts/latest-media.php')); ?>
+						</div>
 				</li>
 			<?php endforeach; ?>
 			</ul>
