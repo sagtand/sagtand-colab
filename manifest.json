@@ -1,0 +1,11 @@
+{
+  "name": "Sågtand Co-Lab",
+  "short_name": "Co-Lab",
+  "start_url": "https://jonassandstedt.se/sagtand-colab/?utm_source=web_app_manifest",
+  "display": "browser",
+  "icons": [{
+    "src": "https://jonassandstedt.se/sagtand-colab/_patterns/skacc88rmavbild-2016-06-15-kl-23-22-42.png",
+    "sizes": "282x282",
+    "type": "image/png"
+  }]
+}
