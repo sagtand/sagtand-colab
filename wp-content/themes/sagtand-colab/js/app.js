@@ -62,7 +62,6 @@ $('#start-jr').on('click', function() {
 
 	function checkKey(e) {
 		var keyCode = e.keyCode;
-		console.log(keyCode);
 		switch (keyCode) {
 			case 49:
 				playSound(0);
